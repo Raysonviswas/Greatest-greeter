@@ -1,10 +1,8 @@
 package greatest
-import Greatest.{CashISAccount, SavingsAccount}
-
 import scala.io.StdIn
 
 class Person(name : String, age: Int) {
-  private val years : String = if (age < 1) "a year" else s"$age years"
+  private val years : String = if (age == 1) "a year" else s"$age years"
 
   def speak() : String = {
   if (name == "adam") { s"You don't get a hello!"
@@ -22,11 +20,12 @@ object GreatestGreeter extends App {
   val age = Prompt.ask("What is your age? ")
   val person = new Person(name, age.toInt)
 
-  val acc = new CashISAccount("12345", 24.5)
+  val acc = {
+    new CashISAccount("12345", 24.5)
+  }
 
   acc.deposit(22)
 
-  println(acc.balance)
-
   println(person.speak())
+  println(acc.balance)
 }

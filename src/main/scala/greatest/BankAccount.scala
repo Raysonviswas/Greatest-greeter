@@ -1,4 +1,4 @@
-package Greatest
+package greatest
 
 abstract class BankAccount (val accountNumber: String, val balance: Double) {
   def withdraw(amount: Double): BankAccount
