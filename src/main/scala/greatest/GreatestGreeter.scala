@@ -30,11 +30,11 @@ object GreatestGreeter extends App {
   val age2 = Prompt.ask("What is your age? ")
   val cashISA = new CashISAccount("45676", 0.0)
   //creating new instance of cash isa called deposited with same account number
-  val deposited = cashISA.deposit(200.00)
+  val deposited = cashISA.deposit(1000.00)
   //creating new instance of cash isa called withdrawn with same account number
-  val withdrawn = cashISA.withdraw(200.00)
+  val withdrawn = deposited.withdraw(200.00)
   //passing cashISA called withdrawn into person
-  val person2 = new Person(name2, age2.toInt, withdrawn)
+  val person2 = new Person(name2, age2.toInt, deposited)
 
   println(person2.speak())
 }

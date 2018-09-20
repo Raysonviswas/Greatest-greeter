@@ -36,12 +36,15 @@ final class CashISAccount (accountNumber: String, balance: Double) extends BankA
   }
 
   override def deposit(amount: Double): BankAccount = {
+
     val depositThreshold : Double = 200.00
 
     if (amount > depositThreshold) {
 
       val difference = amount - depositThreshold
-      println(s"You can't deposit more than £$depositThreshold.Excess: £$difference.")
+
+      println(s"You can't deposit more than £$depositThreshold. Excess: £$difference.")
+
       new CashISAccount(accountNumber, balance + depositThreshold)
 
     } else {
