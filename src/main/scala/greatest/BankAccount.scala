@@ -3,7 +3,7 @@ package greatest
 abstract class BankAccount (val accountNumber: String, val balance: Double) {
   def withdraw(amount: Double): BankAccount
   def deposit(amount: Double): BankAccount
-
+  override def toString: String = s"Account number: $accountNumber, balance : $balance"
 }
 final class SavingsAccount (accountNumber: String, balance: Double) extends BankAccount(accountNumber, balance ){
   override def withdraw(amount: Double): BankAccount = {
@@ -23,7 +23,16 @@ final class CashISAccount (accountNumber: String, balance: Double) extends BankA
     println("you can't withdraw out of a ISA until you close it")
     this
   }
-  override def deposit(amount: Double): BankAccount = new CashISAccount(accountNumber, balance + amount)
+  override def deposit(amount: Double): BankAccount = {
+    val depositThreshold : Double = 200
+    if (amount > depositThreshold) {
+      val difference = amount - depositThreshold
+      println(s"You can't deposit more than £$depositThreshold.Excess: £$difference.")
+      new CashISAccount(accountNumber, balance + depositThreshold)
+    } else {
+      new CashISAccount(accountNumber, balance + amount)
+    }
+  }
 
 }
 
