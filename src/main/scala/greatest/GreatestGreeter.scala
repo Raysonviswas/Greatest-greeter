@@ -1,10 +1,10 @@
 package greatest
 import greatest.models.{BankAccount, CashISAccount, Person, SavingsAccount}
+import greatest.views.Prompt
+
 import scala.io.StdIn
 
-object Prompt {
-  def ask(message: String): String = StdIn.readLine(message)
-}
+
 
 object GreatestGreeter extends App {
 /*  val name = Prompt.ask("What is your name? ")
@@ -25,7 +25,8 @@ object GreatestGreeter extends App {
   val normalAccount = new CashISAccount("l33t", 100)
   val loyalAccountDeposited = normalAccount.deposit(300.00)
   val loyal = new Person("Loyal customer", 22, loyalAccountDeposited)
+//  println(loyal.speak())
+  Prompt.reply(loyal.speak())
 
-  println(loyal.speak())
 
 }
