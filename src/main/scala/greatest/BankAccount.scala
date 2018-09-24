@@ -28,16 +28,14 @@ final class SavingsAccount (accountNumber: String, balance: Double) extends Bank
 
 }
 
-final class CashISAccount (accountNumber: String, balance: Double) extends BankAccount(accountNumber, balance ){
+final class CashISAccount (accountNumber: String, balance: Double, private val depositThreshold : Double = 200.00) extends BankAccount(accountNumber, balance ){
 
   override def withdraw(amount: Double): BankAccount = {
-    println("you can't withdraw out of a ISA until you close it")
+    println(s"You can't withdraw yet, your money is locked in for 3 years!!! And... we've reduced your APR to 0.2%!")
     this
   }
 
   override def deposit(amount: Double): BankAccount = {
-
-    val depositThreshold : Double = 200.00
 
     if (amount > depositThreshold) {
 

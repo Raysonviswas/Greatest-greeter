@@ -12,7 +12,7 @@ class Person(name : String, age: Int, private val bankAccount: BankAccount) {
   def speak() : String = {
   if (name == "adam") { s"You don't get a hello!"
   } else {
-    s"Hello $name, you are $years old!\nYour account details are: $bankAccount"
+    s"Hello $name, you are $years old!\nYour account details are: $bankAccount\n"
   } }
 }
 
@@ -37,4 +37,11 @@ object GreatestGreeter extends App {
   val person2 = new Person(name2, age2.toInt, deposited)
 
   println(person2.speak())
+
+  val normalAccount = new CashISAccount("l33t", 100)
+  val loyalAccountDeposited = normalAccount.deposit(300.00)
+  val loyal = new Person("Loyal customer", 22, loyalAccountDeposited)
+
+  println(loyal.speak())
+
 }
