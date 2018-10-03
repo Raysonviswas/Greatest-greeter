@@ -1,6 +1,7 @@
 package greatest
 
 import greatest.models.Pet
+
 import scala.collection.mutable.ArrayBuffer
 
 abstract class repositories(pet: Pet) {
@@ -16,4 +17,7 @@ abstract class repositories(pet: Pet) {
   //Note: The asterisks is syntax for varargs::
   def removeByName(name : String) : List[Pet] = _pets.toList
   def update(pet: Pet) : List[Pet] = _pets.toList
+
+
+
 }

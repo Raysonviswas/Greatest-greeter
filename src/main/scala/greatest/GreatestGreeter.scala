@@ -40,4 +40,9 @@ object GreatestGreeter extends App {
   //val person = t._3
   //t.productIterator.foreach(x => println(x))
 
+  val pet1 = Cat("Felix")
+  val pet2 = Dog("Spot")
+  val pet3 = Cat("Saqib")
+  println(pet1 == pet3)
+
 }
