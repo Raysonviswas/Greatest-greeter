@@ -21,7 +21,7 @@ object GreatestGreeter extends App {
   val normalAccount = new CashISAccount("l33t", 100)
   val deposited = normalAccount.deposit(300.00)
   val AccountHolder = new Person("Rayson", 22, IndexedSeq(deposited))
- //  println(loyal.speak())
+  // println(loyal.speak())
   Prompt.reply(AccountHolder.speak())
 
   val ages = List(1, 25, 31, 14)
