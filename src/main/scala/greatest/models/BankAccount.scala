@@ -7,4 +7,5 @@ abstract class BankAccount (val accountNumber: String, val balance: Double) {
 
   override def toString: String = s"Account number: $accountNumber, balance : $balance"
 
-}
+  }
+

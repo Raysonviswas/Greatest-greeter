@@ -4,7 +4,7 @@
 		module="greatestapplication$sources"
 		revision="0.1"
 		status="integration"
-		publication="20180925103138"
+		publication="20181002122552"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

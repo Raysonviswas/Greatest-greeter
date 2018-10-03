@@ -1,10 +1,6 @@
 package greatest
-import greatest.models.{BankAccount, CashISAccount, Person, SavingsAccount}
+import greatest.models._
 import greatest.views.Prompt
-
-import scala.io.StdIn
-
-
 
 object GreatestGreeter extends App {
 /*  val name = Prompt.ask("What is your name? ")
@@ -23,10 +19,25 @@ object GreatestGreeter extends App {
 
   println(person2.speak())*/
   val normalAccount = new CashISAccount("l33t", 100)
-  val loyalAccountDeposited = normalAccount.deposit(300.00)
-  val loyal = new Person("Loyal customer", 22, loyalAccountDeposited)
-//  println(loyal.speak())
-  Prompt.reply(loyal.speak())
+  val deposited = normalAccount.deposit(300.00)
+  val AccountHolder = new Person("Rayson", 22, IndexedSeq(deposited))
+ //  println(loyal.speak())
+  Prompt.reply(AccountHolder.speak())
 
+  val ages = List(1, 25, 31, 14)
+  val names = List("adam", "david", "daniel", "david")
+
+  val filtered = for (name <- names if name != "david";
+                      if name != "daniel";
+                      age <- ages
+  ) yield s"\nName: $name, Age: $age"
+                                
+  println(filtered)
+
+  //val t : (Int, String, Person) = (1, "hello", new Person())
+  //val number = t._1
+  //val string = t._2
+  //val person = t._3
+  //t.productIterator.foreach(x => println(x))
 
 }
