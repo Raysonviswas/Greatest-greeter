@@ -18,6 +18,7 @@ object GreatestGreeter extends App {
   val person2 = new Person(name2, age2.toInt, deposited)
 
   println(person2.speak())*/
+
   val normalAccount = new CashISAccount("l33t", 100)
   val deposited = normalAccount.deposit(300.00)
   val AccountHolder = new Person("Rayson", 22, IndexedSeq(deposited))
@@ -41,8 +42,14 @@ object GreatestGreeter extends App {
   //t.productIterator.foreach(x => println(x))
 
   val pet1 = Cat("Felix")
-  val pet2 = Dog("Spot")
-  val pet3 = Cat("Saqib")
+  val pet2 = Dog.withName("bruce")
+  //apply() and unapply() methods
+  //allows us to instantiate an object, or to deconstruct an object. this is true for case classes or objects
+  val pet3 = Dog("Spot", 2)
+  val pet4 = Cat("Saqib")
+
   println(pet1 == pet3)
+  println(pet2.speak)
+  println(pet2.age)
 
 }
