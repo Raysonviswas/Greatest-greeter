@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="157c46d2-50fb-4f07-8904-5f1f327dcf3d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/greatest/GreatestGreeter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/greatest/GreatestGreeter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/greatest/models/Pet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/greatest/models/Pet.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/greatest/GreatestGreeter$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/greatest/GreatestGreeter$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/greatest/GreatestGreeter$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/greatest/GreatestGreeter$delayedInit$body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/greatest/GreatestGreeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/greatest/GreatestGreeter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/greatest/models/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/greatest/models/BankAccount.class" afterDir="false" />
-    </list>
+    <list default="true" id="157c46d2-50fb-4f07-8904-5f1f327dcf3d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -66,7 +59,7 @@
     <session id="-1061605610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
@@ -154,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/greatest/GreatestGreeter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            <state relative-caret-position="75">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <element signature="e#17#41#0" expanded="true" />
                 <element signature="e#183#347#0" />
@@ -215,9 +208,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="1107" />
-    <option name="width" value="1920" />
-    <option name="height" value="1010" />
+    <option name="y" value="81" />
+    <option name="width" value="1910" />
+    <option name="height" value="727" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -293,7 +286,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538584298301" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538900781014" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -516,10 +509,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1105" width="1920" height="1012" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="81" width="3840" height="1993" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15741728" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07775435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -529,7 +521,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31292516" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14814815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -624,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/greatest/GreatestGreeter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="75">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="e#17#41#0" expanded="true" />
             <element signature="e#183#347#0" />
